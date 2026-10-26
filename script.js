@@ -19,6 +19,7 @@
 
 function greet(name) {
   // Write your code here
+  return "Hello, " + name + "!"
 
 }
 
@@ -29,17 +30,21 @@ function greet(name) {
 //
 // STEP 1: ABOVE this function, declare a global variable:
 //         let count = 0;
-//
+ 
 // STEP 2: Inside the function, add 1 to count.
-//
+
+ 
 // STEP 3: Return the new count value.
 //         First click → returns 1, second → returns 2, etc.
-
+return count;
 
 
 function myFunc() {
   // Write your code here
-
+let count = 0;
+ function myFunc{
+  count = count + 1;}
+  return count;
 }
 
 
@@ -57,7 +62,10 @@ function myFunc() {
 
 function getRandomNum(max) {
   // Write your code here
-
+if (typeof max !== "number" || isNaN(max) || max < 1){
+  return 0;
+}
+return Math.floor(Math.random() * max) + 1;
 }
 
 
@@ -70,7 +78,7 @@ function getRandomNum(max) {
 
 function myAdder(x, y) {
   // Write your code here
-
+return Number(x) + Number(y);
 }
 
 
@@ -88,7 +96,15 @@ function myAdder(x, y) {
 
 function distance(x1, y1, x2, y2) {
   // Write your code here
+let deltaX = x2 - x1;
+let squareX = deltaX * deltaX;
 
+let deltaY = y2 - y1;
+let squareY = deltaY * deltaY;
+
+let sum = squareX + squareY;
+
+return Number(Math.sqrt(sum).toFixed(2));
 }
 
 
@@ -103,7 +119,9 @@ function distance(x1, y1, x2, y2) {
 
 function tipCalc(bill, tipPercent) {
   // Write your code here
-
+let tip = bill * (tipPercent / 100);
+let total = bill + tip;
+return total.tofixed(2);
 }
 
 
