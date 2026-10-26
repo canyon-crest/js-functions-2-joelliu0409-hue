@@ -19,7 +19,7 @@
 
 function greet(name) {
   // Write your code here
-  return "Hello, " + name + "!"
+  return "Hello, " + name + "!";
 
 }
 
@@ -36,14 +36,10 @@ function greet(name) {
  
 // STEP 3: Return the new count value.
 //         First click → returns 1, second → returns 2, etc.
-return count;
-
-
-function myFunc() {
-  // Write your code here
 let count = 0;
- function myFunc{
-  count = count + 1;}
+  // Write your code here
+ function myFunc() {
+  count = count + 1;
   return count;
 }
 
@@ -121,7 +117,7 @@ function tipCalc(bill, tipPercent) {
   // Write your code here
 let tip = bill * (tipPercent / 100);
 let total = bill + tip;
-return total.tofixed(2);
+return total.toFixed(2);
 }
 
 
