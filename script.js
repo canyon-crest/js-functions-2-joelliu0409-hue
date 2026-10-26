@@ -101,7 +101,7 @@ let squareY = deltaY * deltaY;
 let sum = squareX + squareY;
 
 let result = Math.sqrt(sum);
-return Math.round(result * 100) / 100;
+return result.toFixed(2);
 }
 
 
